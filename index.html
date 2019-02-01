@@ -8,18 +8,51 @@
     <title>gulp wtih scss</title>
     <link rel="stylesheet" href="/public/css/index.css">
     <link rel="stylesheet" href="/public/css/common.css">
-  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <h1> Hello Gulp!</h1>
-    <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        oyyoyoyoy   
-        
-    </ul>
+ 
+     <div class="panel-calculator" id='calculator'> 
+         <form name="form">
+             <input class="calView" maxlength="15">
+         </form>
+         <table width="100%">
+           
+             <tr>
+                <td><input type="button" class="button" value="7"></td>
+                <td><input type="button" class="button" value="8"></td>
+                <td><input type="button" class="button" value="9"></td>
+                <td><input type="button" class="button" value="/"></td>
+             <tr>
+                <td><input type="button" class="button" value="4"></td>
+                <td><input type="button" class="button" value="5"></td>
+                <td><input type="button" class="button" value="6"></td>
+                <td><input type="button" class="button" value="x"></td>
+             </tr>
+             <tr>
+                <td><input type="button" class="button" value="1"></td>
+                <td><input type="button" class="button" value="2"></td>
+                <td><input type="button" class="button" value="3"></td>
+                <td><input type="button" class="button" value="+"></td>
+             </tr>
+             <tr>
+                <td><input type="button" class="button" value="0"></td>
+                <td><input type="button" class="button" value="00"></td>
+                <td><input type="button" class="button" value="."></td>
+                <td><input type="button" class="button" value="-"></td>
+             </tr>
+             <tr>
+                <td><input type="button" class="button" value="AC"></td>
+                <td><input type="button" class="button" value="&#x21E6;"></td>
+                <td colspan='2' ><input type="button" class="button" value="=" onclick="insert()"></td>
+                 
+             </tr>
+             
+         </table>
+     </div> 
+ 
+ <script src="./assets/index.js"> </script>
 </body>
 
 </html>

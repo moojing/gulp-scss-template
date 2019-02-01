@@ -1,2 +1,44 @@
-@import "variables" ;
- 
+@import "_variables" ;
+@import "_common" ; 
+
+
+.panel-calculator{
+    width: $cal-width; 
+    background-color: $color-primary;
+    border-radius: 20px;
+    margin:auto;
+    padding: 20px 0;
+    table td{
+        width: 25%;
+    }
+}
+
+.calView{
+
+
+    width: 100%; 
+    background-color: $color-primary;
+    padding: 40px; 
+    color:white;
+    border: 0;
+    outline: none;
+    font-size: 30px; 
+    border-radius: 20px;
+    letter-spacing: 2px;
+    &:focus{
+        outline-width: 0;
+    }
+}
+.button{
+    text-align: center;
+    color:white;
+    border:none;
+    background-color: $color-primary;
+    width: 100%; 
+    height: $btn-width; 
+    font-size: 25px; 
+    margin: 2px; 
+    border-radius: 20px;
+    font-weight: 100;
+    cursor: pointer;
+} 
