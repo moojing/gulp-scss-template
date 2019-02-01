@@ -15,44 +15,51 @@
  
      <div class="panel-calculator" id='calculator'> 
          <form name="form">
-             <input class="calView" maxlength="15">
+             <span class="note" id="calNote"></span>
+             <input class="calView" name="calView" maxlength="15" disabled>
          </form>
          <table width="100%">
            
              <tr>
-                <td><input type="button" class="button" value="7"></td>
-                <td><input type="button" class="button" value="8"></td>
-                <td><input type="button" class="button" value="9"></td>
-                <td><input type="button" class="button" value="/"></td>
+                <td><input type="button" class="button" value="7" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="8" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="9" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="/" onclick="insert(this.value)"></td>
              <tr>
-                <td><input type="button" class="button" value="4"></td>
-                <td><input type="button" class="button" value="5"></td>
-                <td><input type="button" class="button" value="6"></td>
-                <td><input type="button" class="button" value="x"></td>
+                <td><input type="button" class="button" value="4"onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="5" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="6" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="*" onclick="insert('*')"></td>
              </tr>
              <tr>
-                <td><input type="button" class="button" value="1"></td>
-                <td><input type="button" class="button" value="2"></td>
-                <td><input type="button" class="button" value="3"></td>
-                <td><input type="button" class="button" value="+"></td>
+                <td><input type="button" class="button" value="1" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="2" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="3" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="+" onclick="insert(this.value)"></td>
              </tr>
              <tr>
-                <td><input type="button" class="button" value="0"></td>
-                <td><input type="button" class="button" value="00"></td>
-                <td><input type="button" class="button" value="."></td>
-                <td><input type="button" class="button" value="-"></td>
+                <td><input type="button" class="button" value="0" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="00" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="." onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="-" onclick="insert(this.value)"></td>
              </tr>
              <tr>
-                <td><input type="button" class="button" value="AC"></td>
-                <td><input type="button" class="button" value="&#x21E6;"></td>
-                <td colspan='2' ><input type="button" class="button" value="=" onclick="insert()"></td>
+                <td><input type="button" class="button" value="AC" onclick="clean()" ></td>
+                <td><input type="button" class="button" value="&#x21E6;" onclick="back()"></td>
+                <td colspan='2' ><input type="button" class="button equal" value="=" onclick="equal()"  ></td>
                  
              </tr>
              
          </table>
      </div> 
  
- <script src="./assets/index.js"> </script>
+     <!-- <script src="./public/js/rxjs/index.js"> </script> -->
+     <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+     <script src="./assets/index.js"> </script>
+ 
 </body>
 
 </html>

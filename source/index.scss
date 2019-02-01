@@ -7,11 +7,24 @@
     background-color: $color-primary;
     border-radius: 20px;
     margin:auto;
-    padding: 20px 0;
+    padding: 20px 10px;
     table td{
         width: 25%;
     }
+    form{
+        position: relative;
+        .note {
+            position: absolute; 
+            right: 0;
+            top: 0;  
+            color:$color-secondary;
+            width: 100%; 
+            text-align: right;
+        } 
+    }
+    
 }
+
 
 .calView{
 
@@ -42,3 +55,6 @@
     font-weight: 100;
     cursor: pointer;
 } 
+.equal{
+    background:linear-gradient(90deg, #00C4FF 10%, #6C00FF 90%);
+}

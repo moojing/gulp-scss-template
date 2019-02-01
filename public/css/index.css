@@ -22,9 +22,18 @@ body {
   background-color: #041936;
   border-radius: 20px;
   margin: auto;
-  padding: 20px 0; }
+  padding: 20px 10px; }
   .panel-calculator table td {
     width: 25%; }
+  .panel-calculator form {
+    position: relative; }
+    .panel-calculator form .note {
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: #00C4FF;
+      width: 100%;
+      text-align: right; }
 
 .calView {
   width: 100%;
@@ -51,3 +60,6 @@ body {
   border-radius: 20px;
   font-weight: 100;
   cursor: pointer; }
+
+.equal {
+  background: linear-gradient(90deg, #00C4FF 10%, #6C00FF 90%); }
