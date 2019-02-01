@@ -2,9 +2,7 @@
 
 
 function clearNote(){ $('#calNote').text('')}
-function insertNode(){
-    
-} 
+ 
 function insert(num){
     if (document.form.calView.value.length>=15) return 
 
@@ -58,4 +56,6 @@ function back(){
     var exp = document.form.calView.value; 
     document.form.calView.value = exp.substring(0,exp.length-1)
 } 
-
+let stream$ = Rx.Observable.create((observer) => {
+    observer.error('error message');
+ })
