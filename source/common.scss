@@ -1,0 +1,50 @@
+// Put settings about html elements and bootstrap classes here if you want to change the original style.
+@import "variables" ;
+@import "node_modules/bootstrap/scss/bootstrap";
+.bg-dark{
+    background-color: $black !important;
+}
+ 
+.navbar-brand{
+    color:white;
+}
+.navbar{
+    background-color: #3b3535;
+    height: $nav-height;
+}
+.navbar-dark .navbar-nav{
+    .nav-link{
+        color:white;
+        font-size: 18px;
+        &:hover{
+            color:#ffbd02;
+        }
+    }
+    .active > .nav-link{
+        color:$color-primary;
+       
+    }
+    .nav-item{ 
+        padding: 0 1.25rem;
+    }
+   
+}
+
+.btn{
+    border-radius: 25px;
+    min-width: 10.5rem;
+    font-size: 1.25rem;
+}
+
+.card{
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px hsla(0,0%,6%,.23);
+    &-subtitle{
+        color:#979797;
+    }
+    &-title{
+        border-bottom:1px solid #979797;
+        
+    }
+}
